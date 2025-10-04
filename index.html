@@ -65,4 +65,59 @@
     </div>
   </header>
 
- 
+ <main id="home">
+
+    <!-- Hero / Sliding banner (scroll + snap) -->
+    <section class="relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="relative overflow-hidden rounded-2xl">
+
+          <!-- Slide controls (anchor links) -->
+          <div class="flex items-center justify-between absolute inset-x-0 top-4 z-20 px-4 sm:px-6">
+            <a href="#slide1" class="p-2 rounded-full bg-white/70 backdrop-blur shadow hover:bg-white">◀</a>
+            <!-- added link to slide2 so middle slide also reachable -->
+            <a href="#slide2" class="p-2 rounded-full bg-white/70 backdrop-blur shadow hover:bg-white">●</a>
+            <a href="#slide3" class="p-2 rounded-full bg-white/70 backdrop-blur shadow hover:bg-white">▶</a>
+          </div>
+
+          <!-- Slides container: horizontal scroll with snap -->
+          <div class="flex overflow-x-auto snap-x snap-mandatory scroll-pl-6 scrollbar-hide">
+
+            <!-- Slide 1 -->
+            <article id="slide1" class="min-w-full snap-center flex-shrink-0 relative bg-gradient-to-r from-indigo-600 to-pink-500 text-white p-8 md:p-16">
+              <div class="max-w-3xl">
+                <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Build modern websites quickly</h1>
+                <p class="mt-4 text-lg md:text-xl opacity-90">A responsive, minimal starter built with Tailwind — perfect for assignments and quick prototypes.</p>
+                <div class="mt-6 flex gap-3">
+                  <a href="#products" class="px-5 py-3 bg-white text-indigo-600 rounded-md font-medium shadow hover:scale-105 transform transition">Explore Products</a>
+                  <a href="#cta" class="px-5 py-3 border border-white/60 rounded-md hover:bg-white/10">Learn More</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article id="slide2" class="min-w-full snap-center flex-shrink-0 relative bg-white p-8 md:p-16">
+              <div class="max-w-3xl flex flex-col md:flex-row items-center gap-8">
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&q=75&w=600" alt="workspace" class="w-full md:w-1/2 rounded-lg shadow-lg object-cover h-56 md:h-72" />
+                <div>
+                  <h2 class="text-2xl font-bold">Design that converts</h2>
+                  <p class="mt-3 text-gray-600">Use consistent spacing, clean typography, and clear CTAs to increase engagement.</p>
+                  <a href="#reviews" class="mt-4 inline-block px-4 py-2 bg-indigo-600 text-white rounded-md">See Reviews</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article id="slide3" class="min-w-full snap-center flex-shrink-0 relative bg-gradient-to-r from-emerald-600 to-sky-500 text-white p-8 md:p-16">
+              <div class="max-w-3xl">
+                <h2 class="text-3xl font-extrabold">Fast, accessible, responsive</h2>
+                <p class="mt-4 text-lg opacity-90">No JavaScript required for the layout — just Tailwind and semantic HTML.</p>
+                <a href="#contact" class="mt-6 inline-block px-5 py-3 bg-white text-emerald-600 rounded-md shadow">Contact Us</a>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
